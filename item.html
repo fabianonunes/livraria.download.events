@@ -1817,9 +1817,11 @@ window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};
 
 ga.l=+new Date;
 
-ga("create","UA-UA-27295293-7","auto");
+ga("create","UA-27295293-7","auto");
 
 ga("create","UA-101435193-1","auto","global",{alwaysSendReferrer:true});
+
+ga("global.require", "eventTracker");
 
 var caminho="/institucional/livraria"+window.location.pathname+window.location.search;
 
@@ -1834,6 +1836,7 @@ ga("global.send","pageview",caminho);
 </script>
 
 <script async="async" src="https://www.google-analytics.com/analytics.js"></script>​
+<script async="async" src="/caminho/do/script/livraria.event-tracker.js"></script>​
    
     <script type="text/javascript" src="catalog/view/theme/fastor/js/owl.carousel.min.js"></script>
     
@@ -1850,7 +1853,6 @@ ga("global.send","pageview",caminho);
 										<script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js"></script>
 										<script type="text/javascript" src="catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js"></script>
 						
-			<script type="text/javascript" src="catalog/view/theme/fastor/skins/store_default/Computer7/js/custom_code.js"></script>
 		
 	  
 	<!--[if lt IE 9]>
@@ -2254,9 +2256,9 @@ ga("global.send","pageview",caminho);
 									<div id="tab-ebooks" class="tab-content " itemprop="tab-ebooks">
 										<div class="links col-12"><a>Ebooks </a></div>
 																																																																									
-																		<a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/573456/licitacoes_contratos_administrativos_3ed.pdf" target="_blank" class="icon icon-pdf"><img src="catalog/view/theme/fastor/css/images/pdf.png"></a>
+																		<a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/573456/licitacoes_contratos_administrativos_3ed.pdf" target="_blank" class="icon icon-pdf" ga-on="click" ga-event-category="TITULO_DO_LIVRO" ga-event-label="pdf" ga-event-action="livro-download"><img src="catalog/view/theme/fastor/css/images/pdf.png"></a>
 																																																																		
-		<a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/573456/licitacoes_contratos_administrativos_3ed.epub" target="_blank" class="icon icon-epub"><img src="catalog/view/theme/fastor/css/images/epub.png"></a>
+		<a href="https://www2.senado.leg.br/bdsf/bitstream/handle/id/573456/licitacoes_contratos_administrativos_3ed.epub" target="_blank" class="icon icon-epub" ga-on="click" ga-event-category="TITULO_DO_LIVRO" ga-event-label="epub" ga-event-action="livro-download"><img src="catalog/view/theme/fastor/css/images/epub.png"></a>
 																																						</div>
 								
 																<!-- EBOOKS -->
